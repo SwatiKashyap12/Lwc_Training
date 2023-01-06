@@ -21,6 +21,6 @@
 Live Demo on the Scratch Org: https://hosted-scratch.herokuapp.com/launch?template=https://github.com/SwatiKashyap12/Lwc_Training
 
 # Preview
+![image](https://user-images.githubusercontent.com/121804533/210980546-159654f1-d1ea-4acc-95c0-6c0e95f9e199.png)
 
-![image]
 # Updating Readme.md file version-1
