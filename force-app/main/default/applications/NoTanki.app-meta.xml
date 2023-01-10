@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0B010E</headerColor>
+        <logo>Screenshot_20230106_144352</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>NoTanki 😎</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>NoTanki_Level1</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>NoTanki_UtilityBar</utilityBar>
+</CustomApplication>
