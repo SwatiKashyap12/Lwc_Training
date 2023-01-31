@@ -1,23 +1,56 @@
 <template>
-    <div class="slds-size_3-of-4">
-        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small" style="background-color:black">VamriTech Employees
-            <lightning-carousel>
+   <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small" style="background-color:black">VamriTech Employees
+        <lightning-card title="List of Github Users"> 
+            <div class="slds-box slds-box_xx-small">
                 <lightning-carousel-image
                     src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-01.jpg"
-                    header = "Hii Everyone!"
-                    description = "Happy New Year"
-                    alternative-text = "First card accessible description."
-                    href = "javascript:void(0);">
+                    header = "Hii Everyone!">
                 </lightning-carousel-image>
-                <lightning-carousel-image
-                    src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-02.jpg"
-                    header = "Good Afternoon"
-                    description = "Kanhaji Bless you all"
-                    alternative-text = "Second card accessible description."
-                    href = "javascript:void(0);">
-                </lightning-carousel-image>
-                
-            </lightning-carousel>
-        </div>
+                <template if:true={retriveduserName}>
+                    The Retrived User is:- <b>{retriveduserName}</b> <br/>
+                </template>
+                </div>
+<template if:true={selecteduser}>
+    The Selected User is:- <strong>{selecteduser}</strong> <br/>
+    <lightning-button variant="brand" label="Save User" title="Primary action" onclick={handleSaveUserClick} class="slds-m-left_x-small"></lightning-button>
+</template>
+<template if:true={retrivedusers}>
+<template for:each={retrivedusers} for:item="retrivedusers">
+    <div key={retrivedusers.id}>
+    <c-git-list-view-comp retrived-user={retrivedusers} onselected={handleonuserclicked}></c-git-list-view-comp>
     </div>
 </template>
+</template>
+</lightning-card>
+    </div>
+</div>
+</template>
+
+
+<!--<template>
+<div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small" style="background-color:black">VamriTech Employees
+        
+        <lightning-card title="List of Github Users"> 
+            <div class="slds-box slds-box_xx-small">
+                <lightning-carousel-image
+                    src = "https://www.lightningdesignsystem.com/assets/images/carousel/carousel-01.jpg"
+                    header = "Hii Everyone!">
+                    
+                </lightning-carousel-image>
+                </div>
+                This one if for Users={selectedUser}
+            
+                <template if:true={retrivedusers}> 
+            <template for:each={retrivedusers} for:item="retrivedusers"> 
+                <div key={retrivedusers.id}> 
+            <c-git-list-view-comp retrived-user={retrivedusers} onselected={handleOnUserClicked}></c-git-list-view-comp>
+                </div> 
+            </template> 
+            </template>
+        
+            </lightning-card>
+    </div>
+</div>
+</template>-->
