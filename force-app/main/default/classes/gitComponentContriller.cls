@@ -4,7 +4,7 @@ public class gitComponentContriller {
          Account oAccount = new Account(Name=ContactName);
          Boolean issuccessful=false;
          try{
-           Database.insert (oAccount,true);
+            Database.insert (oAccount,true);
             issuccessful=true;
             return issuccessful;
          }catch (Exception oEx) {

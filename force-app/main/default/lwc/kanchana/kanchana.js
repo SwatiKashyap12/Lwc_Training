@@ -49,7 +49,6 @@ export default class GitListViewComponent extends LightningElement {
             );
         }
     }
-
     async handleMessage(message) {
        console.log('handleMessage:', message);
        this.personName=message.searchTerm;

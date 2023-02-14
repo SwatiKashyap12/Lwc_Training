@@ -6,8 +6,7 @@ export default class GitListViewComp extends LightningElement {
 
     handleButtonClick(){
         const selectedEvent = new CustomEvent('selected', { detail: this.retrivedUser.login });
-
-        // Dispatches the event.
+       // Dispatches the event.
         this.dispatchEvent(selectedEvent);
     }
 }

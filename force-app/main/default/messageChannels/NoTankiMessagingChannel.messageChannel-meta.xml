@@ -6,4 +6,5 @@
     <lightningMessageFields>
         <fieldName>searchTerm</fieldName>
     </lightningMessageFields>
+
 </LightningMessageChannel >
