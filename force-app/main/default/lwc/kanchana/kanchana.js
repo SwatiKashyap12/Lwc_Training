@@ -63,7 +63,7 @@ export default class GitListViewComponent extends LightningElement {
       }
     }
 
-    unsubscribeToMessageChannel() {
+unsubscribeToMessageChannel() {
         unsubscribe(this.subscription);
         this.subscription = null;
     }
