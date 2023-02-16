@@ -71,7 +71,6 @@ async handleMessage(message) {
     this.dispatchEvent(toastEvent);
     }
 }
-
 unsubscribeToMessageChannel() {
     unsubscribe(this.subscription);
     this.subscription = null;
